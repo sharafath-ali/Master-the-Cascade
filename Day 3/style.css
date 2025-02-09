@@ -41,7 +41,16 @@ body {
   /* Full viewport height */
 }
 
-button :hover{
-  background-color: #0056b3;
+button:hover{
+  background-color: #c4abab;
   /* Darker blue on hover */
+  color: #48a991;
+}
+
+.container {
+  margin-top: 50px;
+  background: linear-gradient(to left, #ff7e5f, #feb47b);
+  padding: 20px;
+  text-align: center;
+  color: white;
 }
