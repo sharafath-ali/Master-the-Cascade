@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: center; */
+    justify-content: space-around;
+}
+
+.box {
+    font: 1.3rem sans-serif;
+    width: 500px;
+    height: 100px;
+    margin: 20px;
+    background-color: rgb(116, 9, 209);
+    text-align: center;
+    align-content: center;
+}
+
+#box1 {
+    /* flex-grow: 1; */
+    order: 4;
+}
+
+#box2 {
+    flex-shrink: 2;
+    order: 1;
+}
+
+#box3 {
+    flex-shrink: 5;
+    order: 4;
+}
+
