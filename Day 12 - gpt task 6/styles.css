@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  background-color: cadetblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  font-size: 1.5rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.sidebar {
+  padding: 20px;
+  background-color: rgb(173, 173, 173);
+  flex: 1;
+  height: 100vh;
+}
+
+.content {
+  flex: 9;
+  background-color: rgb(211, 211, 211);
+  height: 100vh;
+}
+
+.sidebar ul,
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+.content ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: rgb(76, 163, 200);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  /* position: fixed; */
+}
+
+.toggle-btn {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .sidebar {
+    flex: 1;
+  }
+
+  .sidebar ul,
+  h2,
+  p {
+    display: none;
+    /* Hide by default */
+  }
+
+  .sidebar.show ul {
+    display: block;
+    /* Show when toggled */
+  }
+
+  .sidebar.show p{
+    display: block;
+  }
+  .sidebar.show h2{
+    display: block;
+  }
+
+  .sidebar.show {
+    display: block;
+    /* Show when toggled */
+    width: 100%;
+    flex: 3;
+  }
+
+  .toggle-btn {
+    height: 50px;
+    width: 100%;
+    display: block;
+    background-color: rgb(159, 160, 95);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+}
