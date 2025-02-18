@@ -37,4 +37,4 @@ Create a **responsive pricing table** using Flexbox with the following requireme
 
 ---
 
-After completing Task 2, you will receive the next challenge!
+After completing Task 7, you will receive the next challenge!
