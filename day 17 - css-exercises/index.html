@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="/submit-form" method="post" enctype="multipart/form-data">
+    <!-- novalidate == attribute to disable browser validation && enctype="multipart/form-data" == attribute to allow file uploads, If you upload a file without enctype="multipart/form-data", the file won't be sent properly. This encoding type ensures the form data is split into multiple parts (hence, "multipart"), allowing text fields and binary data (files) to be sent together.-->
+    <label for="username">Username:</label>
+    <input type="text" id="usernamed" name="userndam" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required minlength="6">
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob">
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="bio">Short Bio:</label>
+    <textarea id="bio" name="bio" rows="4"></textarea>
+
+    <label for="subscribe">
+      <input type="checkbox" id="subscribe" name="subscribe"> Subscribe to newsletter
+    </label>
+
+    <label for="country">Country:</label>
+    <input list="countries" id="country" name="country">
+    <datalist id="countries">
+      <option value="USA">
+      <option value="India">
+      <option value="UK">
+    </datalist>
+
+    <fieldset>
+      <legend>Select Your Gender</legend>
+
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label>
+    </fieldset>
+
+    <input type="file" name="photos" multiple>
+
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+
+</body>
+
+</html>
